@@ -154,16 +154,51 @@ h5 {
   width: 960px;
 }
 
+@media (max-width: 500px) {
+  .page {
+    width: 500px;
+  }
+}
+
+header {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
+
 header nav {
   margin: 20px 0;
-  display: inline-block;
   margin-left: 20px;
   margin-right: 62px;
 }
 
+@media (max-width: 800px) {
+  header nav {
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav {
+    border: solid black 1px;
+    flex-direction: column;
+  }
+}
+
 header section img.logo {
   margin-left: 10px;
-  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  header section img.logo {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .middle-img {
@@ -178,14 +213,22 @@ header nav a {
   color: grey;
   text-decoration: none;
   margin-right: 50px;
-  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  header nav a {
+    flex-direction: column;
+    margin-right: 0;
+    width: 100%;
+    border: solid black 1px;
+  }
 }
 
 section.welcome {
   border-bottom: 1px solid black;
   padding-bottom: 60px;
 }
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   section.welcome {
     margin-top: 30px;
     display: flex;
@@ -217,11 +260,36 @@ section div.innovation {
   display: block;
 }
 
+@media (max-width: 500px) {
+  .button {
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+  }
+}
+
 div.sub-section1 {
   margin: 30px 1%;
   width: 45%;
   display: inline-block;
   vertical-align: top;
+}
+@media (max-width: 500px) {
+  div.sub-section1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  img.middle-img {
+    display: flex;
+    width: auto;
+    margin-bottom: 40px;
+  }
 }
 
 div.sub-section2 {
@@ -231,11 +299,29 @@ div.sub-section2 {
   vertical-align: top;
   padding: 35px 0;
 }
+
+@media (max-width: 500px) {
+  div.sub-section2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 40px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+
 .main-content2 {
   border-bottom: solid black 1px;
 }
 .contact {
-  margin-top: 30px;
+  margin-top: 40px;
+}
+
+@media (max-width: 500px) {
+  .contact {
+    margin-left: 30px;
+  }
 }
 
 .copyright {
