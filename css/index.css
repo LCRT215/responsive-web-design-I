@@ -1,3 +1,344 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.page {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 960px;
+}
+
+@media (max-width: 500px) {
+  .page {
+    width: 500px;
+  }
+}
+section.navigation {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  section.navigation {
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+
+section.navigation nav {
+  margin: 20px 0;
+  margin-left: 20px;
+  margin-right: 62px;
+}
+
+@media (max-width: 800px) {
+  section.navigation nav {
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  section.navigation nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+section.navigation nav a {
+  font-size: 15px;
+  color: grey;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+@media (max-width: 500px) {
+  section.navigation nav a {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: solid black 1px;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+}
+
+img.logo {
+  margin-left: 10px;
+  width: auto;
+}
+
+@media (max-width: 800px) {
+  img.logo {
+  }
+}
+@media (max-width: 500px) {
+  img.logo {
+    border: red 2px solid;
+  }
+}
+/* End of Navigation */
+
+.middle-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+section.welcome {
+  border-bottom: 1px solid black;
+  padding-bottom: 60px;
+}
+@media (max-width: 800px) {
+  section.welcome {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  section.welcome {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+
+section div.innovation {
+  font-size: 80px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.top-img {
+  margin-top: 40px;
+  margin-left: 15%;
+}
+
+@media (max-width: 800px) {
+  .top-img {
+    display: none;
+  }
+}
+
+.button {
+  width: 150px;
+  height: 30px;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+div.sub-section1 {
+  margin: 30px 1%;
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+@media (max-width: 500px) {
+  div.sub-section1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  img.middle-img {
+    display: flex;
+    width: auto;
+    margin-bottom: 40px;
+  }
+}
+
+div.sub-section2 {
+  margin: 10px 1%;
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 35px 0;
+}
+
+@media (max-width: 500px) {
+  div.sub-section2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 20px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.main-content2 {
+  border-bottom: solid black 1px;
+}
+.contact {
+  margin-top: 40px;
+}
+
+@media (max-width: 500px) {
+  .contact {
+    margin-left: 20px;
+  }
+}
+
+.copyright {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 5%;
+}
